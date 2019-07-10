@@ -1,4 +1,4 @@
-package assignment_2;
+package retailstore;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,9 +10,9 @@ public class App {
 
 		List<Supplier> suppList = new ArrayList<>();
 
-		suppList.add(new Supplier(1001, "Vihaan", 7));
-		suppList.add(new Supplier(1005, "Gaurav", 35));
-		suppList.add(new Supplier(1003, "Pawan", 38));
+		suppList.add(new Supplier(1001, "Vihaan", 7, 5000));
+		suppList.add(new Supplier(1005, "Gaurav", 35, 8000));
+		suppList.add(new Supplier(1003, "Pawan", 38, 7000));
 
 		Collections.sort(suppList, new Sortbysuppname());
 
@@ -22,9 +22,9 @@ public class App {
 
 		List<Consumer> consList = new ArrayList<>();
 
-		consList.add(new Consumer(2006, "Sid", 27));
-		consList.add(new Consumer(2001, "John", 65));
-		consList.add(new Consumer(2004, "Ravi", 19));
+		consList.add(new Consumer(2006, "Sid", 27, 9000));
+		consList.add(new Consumer(2001, "John", 65,3000));
+		consList.add(new Consumer(2004, "Ravi", 19, 2000));
 
 		Collections.sort(consList, new Sortbyconname());
 
